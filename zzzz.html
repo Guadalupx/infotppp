@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantene</title>
+    <link rel="stylesheet" href="zzzz.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">  
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="zzz.html">products</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#pantene" class="logo">Pantene</a>
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="images/contact.html" class="fas fa-user"></a>
+    </div>
+    <div id="carrito" onclick="toggleCart()">
+        <svg class="carritodecompras w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+        <div id="ginita">0</div>
+    </div>
+    <section id="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar productos..." onkeyup="filterProducts()">
+    </section>
+</header>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section id="shampoos">
+    <h2>Shampoos</h2>
+    <br><br><br>
+    <div class="champu">
+        <div id="champu1" class="product">
+            <img src="https://images.ctfassets.net/r22v2vd8bb1u/2Z1IZqaETDNQ964x7Kwe52/8abeb362d5720876e77c64d544449e82/080878195183_C1N1_dt.jpg?fm=webp" id="shampo" alt="Shampoo 1"/>
+            <br><br>
+            <h4>CHAMPÚ CLASSIC CLEAN</h4>
+            <p>Pantene Pro-V Classic Clean Shampoo limpia suavemente para un cabello brillante y manejable. Ayuda a eliminar la acumulación de productos de estilo que puede dejar tu cabello con un aspecto aburrido y sin vida, este champú te da un acabado fresco y limpio.</p>
+            <h4>$15.720,50</h4>
+            <br>
+            <input type="button" value="Agregar al carrito" onclick="addToCart('CHAMPÚ CLASSIC CLEAN', 15720.50)">
+        </div>
+      
+<div id="champu2" class="product">
+    <img src="https://images.ctfassets.net/r22v2vd8bb1u/D1je4Yn3E9YcTmGdjHrGR/93e39254454dad2ba19f6e5a18152e7b/080878195237_C1N1_dt.jpg?fm=webp" id="shampo" alt="Shampoo 2"/>
+</br>
+</br>
+    <h4>CHAMPÚ CURL PERFECTION
+    </h4>
+    <p>Este champú hidratante para cabello rizado está impregnado con un complejo calmante para el encrespamiento que ayuda a suavizar los bordes de la cutícula para definir los rizos y controlar el encrespamiento, incluso permitiéndote secar al aire tu camino hacia tus rizos perfectos.
+        </p>
+    <h4>$12.570,99</h4>
+</br>
+<input type="button" value="Agregar al carrito" onclick="addToCart('CHAMPÚ CURL PERFECTION', 12.570,99)">
+</div>
+<div id="champu3" class="product">
+    <img src="https://images.ctfassets.net/r22v2vd8bb1u/56tR5O9GBuYLDJOSuJQkPY/1dfa5188709bbf6d2431af81aa8c8ec4/080878195213_C1N1_dt.jpg?fm=webp" id="shampo" alt="Shampoo 3"/>
+</br>
+</br>
+    <h4>CHAMPÚ REPAIR AND PROTECT
+</h4>
+    <p>La colección Repair & Protect de Pantene Pro-V es una colección única de champú, acondicionador y tratamientos que pueden ayudar a reparar seis meses de daños en un solo uso y proporcionar protección continua durante todo el día. Es lo mejor para cabellos maltratados en busca de un milagro.  
+    </p>
+
+    <h4>$11.914,31 
+    </h4>
+</br>
+    <input type="button" value="Agregar al carrito" onclick="addToCart('CHAMPÚ REPAIR AND PROTECT', 11.914,31)" >
+    </div>
+    </div>
+</section>
+
+
+</br>
+</br>
+
+
+<section id="acondicionador">
+    <h2>Acondionadores</h2>
+   
+</br>
+</br>
+</section>
+
+<div class="acondi1">
+    <div id="acondis1" class="product">
+        <img src="https://images.ctfassets.net/r22v2vd8bb1u/6IlvvD3hdBb4OkxUmkNJMw/18aee63869a06ba826b697692742ab14/080878195008_C1N1_dt.jpg?fm=webp 
+        " id="acondicionado" alt="Acondicionador 1"/>
+    </br>
+</br>
+</br>
+</br>
+        <h4>ACONDICIONADOR REPAIR & PROTECT </h4>
+        <p>Combate el daño en cada lavado-Llena de nutrientes y antioxidantes cada hebra de cabello con el acondicionador Repair & Protect de Pantene Pro-V. El acondicionador Repair & Protect ayuda a reparar el cabello seco o tratado químicamente de adentro hacia afuera y lo nutre para que ocurra hasta dos veces menos resquebrajamiento. Dale a tu cabello la fuerza que merece. 
+       </p>
+        <h4>$15.970</h4>
+    </br>
+</br>
+</br>
+</br>
+    <input type="button" value="Agregar al carrito" onclick="addToCart('ACONDIONADOR REPAIR & PROTECT', 15.970)" >
+    </div>
+    <div id="acondis2" class="product">
+        <img src="https://images.ctfassets.net/r22v2vd8bb1u/26LCdphDnhFi47M27yn388/65fcc42256f89236c9e94f56968b8e45/080878194995_C1N1_dt.jpg?fm=webp 
+        " id="acondicionado" alt="Acondicionador 2"/>
+    </br>
+</br>
+</br>
+</br>
+        <h4>ACONDICIONADOR CLASSIC CLEAN</h4>
+        <p>Combate el daño en cada lavado-Llena de nutrientes y antioxidantes cada hebra de cabello con el acondicionador Repair & Protect de Pantene Pro-V. El acondicionador Repair & Protect ayuda a reparar el cabello seco o tratado químicamente de adentro hacia afuera y lo nutre para que ocurra hasta dos veces menos resquebrajamiento.* Dale a tu cabello la fuerza que merece. 
+        </p>
+        <h4>$13.800</h4>
+    </br> 
+</br>
+</br>
+</br>
+    <input type="button" value="Agregar al carrito" onclick="addToCart('ACONDIONADOR CLASSIC CLEAN', 13.800)">
+    </div>
+    <div id="acondis3" class="product">
+        <img src="https://images.ctfassets.net/r22v2vd8bb1u/5slsTjzem2Xm5CKW40umRo/3c4ac3c8365f5331ad81a0b7b765d5ad/00080878195015_C1N1_dt.jpg?fm=webp" id="acondicionado" alt="Acondicionador 3"/>
+    </br>
+</br>
+</br>
+</br>
+        <h4>ACONDICIONADOR CURL PERFECTION</h4>
+        <p> Este champú hidratante para cabello rizado está impregnado con un complejo calmante encrespamiento que ayuda a suavizar los bordes de la cutícula para definir los rizos y controlar el encrespamiento, incluso permitiéndote secar al aire tu camino hacia tus rizos perfectos. Deja el cabello flexible, manejable, brillante y con una sensación hidratada. 
+        </p>
+        <h4>$17.200</h4>
+    </br>
+</br>
+</br>
+</br>
+    <input type="button" value="Agregar al carrito" onclick="addToCart('ACONDIONADOR CURL PERFECTION', 17.200)">
+    </div>
+</div>
+
+
+<section id="mascarillas">
+    <h2>Mascarillas</h2>
+</br>
+</br>
+</section>
+<div class="mascarillas">
+    <div id="mascari1" class="product">
+        <img src="https://m.media-amazon.com/images/I/51fIFT9fclL._AC_UF1000,1000_QL80_.jpg
+        " id="mascarilla" alt="Macarilla 1"/>
+    </br>
+</br>
+</br>
+</br>
+        <h4>    MASCARILLA INTENSIVA REPARA, PROTEGE, ANTI-FRIZZ
+        </h4>
+        <p>Su tecnología inteligente identifica las áreas dañadas del cabello y ayuda a repararlo donde más lo necesita, proporcionando hidratación y nutrición, logrando una gran suavidad y protección del color de tu cabello.
+        </p>
+        <h4>$6.810</h4>
+    </br>
+</br>
+</br>
+</br>
+</br>
+    <input type="button" value="Agregar al carrito" onclick="addToCart('MASCARILLA INTENSIVA REPARA,PROTEGE,ANTI-FRIZZ', 6.810)">
+    </div>
+    <div id="mascari2" class="product">
+        <img src="https://m.media-amazon.com/images/I/518xB98WgjL._AC_UF1000,1000_QL80_.jpg"
+        id="mascarilla" alt="Mascarillas 2"/>
+    </br>
+</br>
+</br>
+</br>
+        <h4>    MASCARILLA INTENSIVA NUTRE, RENUEVA, SELLA LAS PUNTAS
+        </h4>
+        <p>Su tecnología cuenta con un triple blend de ingredientes acondicionantes que nutren y sellan tu cabello hasta las puntas logrando una gran suavidad y una cabello manejable con frizz controlado.
+        </p>
+        <h4>$6.442</h4>
+    </br>
+</br>
+</br>
+</br>
+    </br>
+    <input type="button" value="Agregar al carrito" onclick="addToCart('MASCARILLA INTENSIVA NUTRE, RENUEVA, SELLA LAS PUNTAS', 6.442)">
+    </div>
+    <div id="mascari3" class="product">
+        <img src="https://milyperfumerias.com.uy/images/thumbs/0260113_110490-1_360.jpeg"  id="mascarilla"  alt="Macarillas 3"/>
+    </br>
+</br>
+</br>
+</br>
+        <h4>    MASCARILLA INTENSIVA NUTRICIÓN CON PERLAS PRO VITAMINAS</h4>
+        <p>Cabello hasta 100% más fuerte y revitalizado. Las nuevas mascarillas intensivas Pro-V Miracles junto al poder de las Perlas Pro-Vitaminas nutren mucho el pelo super duro y crocante.
+        </p>
+        <h4>$7.200</h4>
+    </br>
+</br>
+</br>
+</br>
+    </br>
+    <input type="button" value="Agregar al carrito" onclick="addToCart(' MASCARILLA INTENSIVA NUTRICIÓN CON PERLAS PRO VITAMINAS', 7.200)">
+    </div>
+    </div>
+</section>
+    </div>
+</section>
+<!-- Similar sections for Acondicionadores and Mascarillas -->
+<div id="cart-container" class="cart-container">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="total-amount">0.00</span></h3>
+    <button onclick="checkout()">Comprar</button>
+</div>
+<script src="zzzz.js"></script>
+</body>
+</html>

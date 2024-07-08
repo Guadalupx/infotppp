@@ -1,0 +1,711 @@
+:root{
+    --gold: #9f7d23;
+    }
+   
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+section{
+    padding:2rem 9%;
+    }
+
+
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        color: #000000;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgba (255, 51, 153,.05);
+        }
+   
+        .heading span{
+            color:var(--gold);
+            }
+   
+        .btn{
+        display: inline-block;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        background: #000000;
+        color: #fff;
+        padding: .9rem 3.5rem;
+        cursor: pointer;
+        font-size: 1.7rem;
+        }
+       
+        .btn:hover{
+        background:var(--gold);
+        }
+
+
+ header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+header .logo{
+    font-size: 3rem;
+    color:#000000;
+    font-weight: bolder;
+}
+
+
+header .logo span{
+    color:var(--gold);
+    }
+   
+    header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #000000;
+}
+
+
+    header .navbar a:hover{
+        color:var(--gold);
+        }
+       
+        header .icons a{
+        font-size: 2.5rem;
+        color: #333;
+        margin-left: 1.5rem;
+    }
+       
+        header icons a:hover{
+        color: var (--gold);
+    }
+   
+    header #toggler{
+        display: none;
+    }
+       
+     header .fa-bars{
+        font-size: 3rem; color: #333;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        cursor: pointer;
+        border: .1rem solid rgba(0,0,0,.3);
+        display: none;
+     }
+     
+     
+     .home{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        background: url(https://valuna.co/wp-content/uploads/2021/01/tips-cabello-hermoso-sano.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+
+
+        .home .content{
+            max-width: 50rem;
+        }
+           
+            .home .content h3{
+            font-size: 6rem;
+            color: #000000;
+            }
+
+
+            .home .content span{
+            font-size: 3.5rem;
+            color: var(--gold);
+            padding:1rem 0;
+            line-height: 1.5;
+         }
+
+
+         .home .content p{
+            font-size: 1.5rem;
+            color: #000000;
+            padding: 1rem 0;
+            line-height: 1.5;
+         }
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    }  
+
+
+    .about .row .video-conteiner{
+        flex:1 1 40rem;
+        position: relative;
+        }
+       
+        .about .row .video-container video{
+        width: 100%;
+        border: 1.5rem solid #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        height: 100%;
+        object-fit: cover;
+        }
+
+
+        .about .row .video-container h3{
+            position: absolute;
+            top: 50%; transform: translateY(-50%);
+            font-size: 3rem;
+            background: #fff;
+            width:100%;
+            padding:1rem 2rem;
+            text-align: center;
+            mix-blend-mode: screen;
+        }
+           
+            .about .row .content{
+            flex: 1 1 40rem;
+            }
+
+
+            .about .row .content h3{
+                font-size: 3rem;
+                color: #000000;
+                }
+               
+                .about .row .content p{
+                font-size: 1.5rem;
+                color: #000000;
+                padding: .5rem 0;
+                padding-top: 1rem;
+                line-height: 1.5;
+                }
+
+
+         @media (max-width:991px){
+
+
+        html{
+        font-size: 55%;
+        }
+       
+        header{
+        padding: 2rem;
+        }
+       
+        section{
+            padding: 2rem;
+            }
+   
+    .home{
+        background-position: left;
+    }
+   
+        }
+
+
+    @media (max-width: 768px){
+
+
+        header .fa-bars{
+        display: block;
+        }
+       
+        header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+     
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+
+        header .navbar a{
+            margin:1.5rem;
+            padding:1.5rem;
+            background: #fff;
+            border: .1rem solid rgba(0,0,0,.1);
+            display: block;
+            }  
+
+
+.home .content h3{
+    font-size: 5rem;
+}
+
+
+.home .content span{
+    font-size: 2.5rem;
+}
+
+
+
+
+
+@media (max-width:450px){
+    html{
+    font-size: 50%;
+    }
+
+
+
+
+.heading{
+    font-size: 3rem;
+}
+
+
+}
+
+
+#santiaguito {
+height: 500px;
+width: 500px;
+}
+
+
+#cocaaa {
+    height: 60px;
+    width: 60px;
+}
+
+
+#coca{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 20px;
+    margin-left: 10px;
+    align-items: center;  
+    text-align: center;
+    grid-template-areas:
+    "icons1 icons2 icons3 icons4"
+}
+
+:root{
+    --gold: #9f7d23;
+    }
+   
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+section{
+    padding:2rem 9%;
+    }
+
+
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        color: #333;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgba (255, 51, 153,.05);
+        }
+   
+        .heading span{
+            color:var(--pink);
+            }
+   
+        .btn{
+        display: inline-block;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        background: #333;
+        color: #fff;
+        padding: .9rem 3.5rem;
+        cursor: pointer;
+        font-size: 1.7rem;
+        }
+       
+        .btn:hover{
+        background:var(--gold);
+        }
+
+
+ header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+header .logo{
+    font-size: 3rem;
+    color: #000000  ;
+    font-weight: bolder;
+}
+
+
+header .logo span{
+    color:var(--gold);
+    }
+   
+    header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+
+    header .navbar a:hover{
+        color:var(--gold);
+        }
+       
+        header .icons a{
+        font-size: 2.5rem;
+        color: #333;
+        margin-left: 1.5rem;
+    }
+       
+        header icons a:hover{
+        color: var (--gold);
+    }
+   
+    header #toggler{
+        display: none;
+    }
+       
+     header .fa-bars{
+        font-size: 3rem; color: #333;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        cursor: pointer;
+        border: .1rem solid rgba(0,0,0,.3);
+        display: none;
+     }
+
+     #shampoos {
+        text-align: center;
+        font-size: 30px;
+        margin-top: -10px;
+    } 
+    
+    #acondicionador {
+        text-align: center;
+        font-size: 30px;
+        padding-left: 400px;
+    } 
+
+    #mascarillas {
+        text-align: center;
+        font-size: 30px;
+        padding-left: 100px;
+    } 
+     .champu{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 3fr 3fr 3fr;
+        gap: 50px;
+        margin-top: -50px;
+        margin-left: 10px;
+        align-items: center;  
+        text-align: center;
+        grid-template-areas:
+        "champu1 champu2 champu3"
+    }
+
+   
+   
+    #shampo {
+        height: 250px;
+        width: 250px;
+    }
+   
+   
+   
+    .acondi1{
+        width: 90%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 3fr 3fr 3fr;
+        gap: 95px;
+        margin-top: -80px;
+        margin-left: 10px;
+        align-items: center;  
+        text-align: center;
+        padding-left: 120px;
+        grid-template-areas:
+        "acondis 1 acondis2 acondis3"
+    }
+   
+   
+    #acondicionador{
+        height: 250px;
+        width: 250px;
+        place-items: center;
+        text-align: center;
+    }
+   
+   
+    #acondicionado {
+        height: 250px;
+        width: 250px;
+    }
+   
+   
+   
+    .mascarillas3{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 3fr 3fr 3fr;
+        gap: 10px;
+        margin-top: -50px;
+        margin-left: 70spx;
+        align-items: center;  
+        text-align: center;
+        grid-template-areas:
+        "mascari1 mascari2 mascari3"
+    }
+   
+   
+    #mascarilla {
+        height: 250px;
+        width: 250px;
+    }
+
+   
+
+   
+   
+    h5 {
+        color:rgb(44, 43, 43);
+    }
+   
+   
+    button {
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+   
+    input{font-size: 20px; color: rgb(255, 255, 255); background-color: #9f7d23;  border-top-left-radius: 250px;
+        border-top-right-radius: 250px;
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 200px;}
+
+
+    h4{
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+
+    :root{
+        --gold: #9f7d23;
+        }
+       
+    *{
+        margin:0; padding:0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        outline: none; border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
+    
+    
+    
+    
+    html{
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+        overflow-x: hidden;
+    }
+    
+    
+    section{
+        padding:2rem 9%;
+        }
+    
+    
+        .heading{
+            text-align: center;
+            font-size: 4rem;
+            color: #333;
+            padding: 1rem;
+            margin: 2rem 0;
+            background: rgba (255, 51, 153,.05);
+            }
+       
+            .heading span{
+                color:var(--pink);
+                }
+               
+
+            .button{
+            display: inline-block;
+            margin-top: 1rem;
+            border-radius: 5rem;
+            background: #333;
+            color: #fff;
+            padding: .9rem 3.5rem;
+            cursor: pointer;
+            font-size: 1.7rem;
+            }
+           
+        
+    
+    
+     header{
+        position: fixed;
+        top:0; left:0; right:0;
+        background: #fff;
+        padding: 2rem 9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    }
+    
+    
+    header .logo{
+        font-size: 3rem;
+        color:#333;
+        font-weight: bolder;
+    }
+    
+    
+    header .logo span{
+        color:var(--gold);
+        }
+       
+        header .navbar a{
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        color: #666;
+    }
+    
+    
+        header .navbar a:hover{
+            color:var(--gold);
+            }
+           
+            header .icons a{
+            font-size: 2.5rem;
+            color: #333;
+            margin-left: 1.5rem;
+        }
+           
+            header icons a:hover{
+            color: var (--pink);
+        }
+       
+        header #toggler{
+            display: none;
+        }
+           
+         header .fa-bars{
+            font-size: 3rem; color: #333;
+            border-radius: .5rem;
+            padding: .5rem 1.5rem;
+            cursor: pointer;
+            border: .1rem solid rgba(0,0,0,.3);
+            display: none;
+         }
+    
+    
+         #contactus {
+            margin-top: -150px;
+            position: absolute;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            background-color:rgb(245, 245, 245);
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            color:black;
+           }
+
+    
+        #formu{
+            font-size: 25px;
+        }
+        #formu1{
+            font-size: 20px ;
+        }
+       
+        #formulario {
+            margin-top: -80px;
+            position: absolute;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            background-color:rgb(245, 245, 245);
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 80%;
+            color:black;   
+        }
+       
+        .perro
+        input{font-size:28px; color: black; background-color: white}
+        
+        a {
+            color: white;
+        }
+       
+        body{
+            background-color: #decf8c;
+         }
+         
+     
+
+
+
+

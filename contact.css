@@ -1,0 +1,227 @@
+
+#contactus {
+    margin-top: -150px;
+    position: absolute;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(245, 245, 245);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    color:black;
+   }
+
+
+
+#formu{
+    font-size: 20px;
+}
+
+#formu1{
+    font-size: 15px ;
+}
+
+#Name {
+    font-size: 15px;
+}
+
+#email{
+    font-size: 15px;
+}
+
+#questions{
+    font-size: 15px;
+}
+
+#cata {
+    font-size: 15px;
+}
+
+#formulario {
+    margin-top: -80px;
+    position: absolute;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(245, 245, 245);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 80%;
+    color:black;  
+}
+
+.perro
+input{font-size:28px; color: black; background-color: white}
+
+a {
+    color: white;
+}
+
+body{
+    background-color: #f0e4c4;
+ }
+
+
+
+
+
+
+
+
+
+h5 {
+    color:rgb(44, 43, 43);
+}
+
+
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+input{font-size: 20px; color: rgb(255, 255, 255); background-color: #9f7d23;  border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;}
+
+
+
+
+h4{
+    font-size: 15px;
+}
+p{
+    font-size: 13px;
+}
+
+   
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+    --gold: #9f7d23;
+    }
+   
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+ header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+
+header .logo span{
+    color:var(--gold);
+    }
+   
+    header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+
+    header .navbar a:hover{
+        color:var(--gold);
+        }
+       
+        header .icons a{
+        font-size: 2.5rem;
+        color: #333;
+        margin-left: 1.5rem;
+    }
+       
+        header icons a:hover{
+        color: var (--pink);
+    }
+   
+    header #toggler{
+        display: none;
+    }
+       
+     header .fa-bars{
+        font-size: 3rem; color: #333;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        cursor: pointer;
+        border: .1rem solid rgba(0,0,0,.3);
+        display: none;
+     }
+
+
+
+    a {
+        color: white;
+    }
+
+
